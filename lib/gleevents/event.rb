@@ -29,7 +29,7 @@ class Event
   def self.identified_event(triggerer, action, properties={})
     anon_id = properties.delete(:anonymous_id)
     e = self.create :triggerer => triggerer, :action => action, :properties => properties
-    Event.where(:anonymous_id => anon_id).update_all triggerer_id: triggerer.id, triggerer_type: trigger.class, anonymous_id: nil
+    Event.where(:anonymous_id => anon_id).update_all triggerer_id: triggerer.id, triggerer_type: triggerer.class, anonymous_id: nil
     e
   end
 
