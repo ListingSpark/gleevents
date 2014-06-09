@@ -37,7 +37,7 @@ class Event
     # Segment.io will only accept events posted with user_ids
     unless self.broadcast?
       Analytics.track(
-          user_id: self.triggerer_id || self.anonymous_id,
+          user_id: self.triggerer_id.try(:to_s) || self.anonymous_id.try(:to_s),
           event: self.action,
           properties: self.properties
       )
