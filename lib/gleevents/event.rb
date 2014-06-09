@@ -15,7 +15,7 @@ class Event
   # anonymous_id, which should be saved in the session and included on future anonymous event calls (in the
   # properties hash, aka Event.anonymous_event('second_event', {:anonymous_id => anon_id_saved_in_session}))
   def self.anonymous_event(action, properties={})
-    anon_id = properties.delete(:anonymous_user_id)
+    anon_id = properties.delete(:anonymous_id)
     e = self.new :action => action, :properties => properties
     e.anonymous_id = anon_id || e.id
     e.save
