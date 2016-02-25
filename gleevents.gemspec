@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Gleevents::VERSION
   s.authors     = ["Jonathan Geggatt"]
   s.email       = ["jgeggatt@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Gleevents."
-  s.description = "TODO: Description of Gleevents."
+  s.homepage    = "none"
+  s.summary     = "no summary"
+  s.description = "no description"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
