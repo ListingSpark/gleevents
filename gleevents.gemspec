@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Gleevents::VERSION
   s.authors     = ["Jonathan Geggatt"]
   s.email       = ["jgeggatt@gmail.com"]
-  s.homepage    = "www.blah.com"
+  s.homepage    = "https://www.blah.com"
   s.summary     = "no summary"
   s.description = "no description"
   s.license     = "MIT"
